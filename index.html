@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kosningar Akureyri 2026 — Yfirlit</title>
+  <meta name="description" content="Persónulegt yfirlit yfir stefnumál flokka í sveitarstjórnarkosningum á Akureyri 16. maí 2026.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav">
+      <a href="index.html" class="site-logo">
+        <span class="logo-mark">A</span>
+        Kosningar Akureyri 2026
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Yfirlit</a>
+        <a href="akvardanavel.html">Ákvörðunarvél</a>
+        <a href="samanburdur.html">Samanburður</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container-narrow">
+        <span class="meta">Sveitarstjórnarkosningar · 16. maí 2026</span>
+        <h1>Hvað á ég að kjósa?</h1>
+        <p class="lead">
+          Persónulegt yfirlit yfir stefnumál flokkanna fimm sem bjóða fram á Akureyri.
+          Berðu saman, prófaðu ákvörðunarvélina og kynntu þér stefnuskrárnar í heild.
+        </p>
+        <div class="btn-group" style="justify-content: center;">
+          <a href="akvardanavel.html" class="btn btn-primary">Prófa ákvörðunarvélina →</a>
+          <a href="samanburdur.html" class="btn">Sjá samanburð</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Flokkarnir</h2>
+        <p class="section-lead">Smelltu á flokk til að lesa stefnuskrá hans í heild.</p>
+        <div class="card-grid" id="party-grid">
+          <!-- Fylling kemur frá JS -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Hvernig á að nota þetta?</h2>
+        <div class="card-grid">
+          <a href="akvardanavel.html" class="action-card">
+            <span class="icon">🎚️</span>
+            <h3>Ákvörðunarvél</h3>
+            <p>Stilltu sleiðar fyrir hvert málefni eftir mikilvægi. Sjáðu hvaða flokkar passa best við þínar áherslur.</p>
+          </a>
+          <a href="samanburdur.html" class="action-card">
+            <span class="icon">📊</span>
+            <h3>Samanburður</h3>
+            <p>Beinn samanburður á því sem flokkarnir vilja gera í hverju málefni — húsnæði, atvinnulíf, álögur og fleira.</p>
+          </a>
+          <a href="stefnuskra/sjalfstaedisflokkurinn-rekstur.html" class="action-card">
+            <span class="icon">📚</span>
+            <h3>Stefnuskrár</h3>
+            <p>Lesa stefnuskrárnar í heild með snyrtilegu sniði — drilla niður í smáatriði ef málefni vekur áhuga.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container-narrow">
+        <div class="disclaimer-banner">
+          <strong>Athugið:</strong> Þessi vefur er útbúinn til einkanota fyrir mig og fjölskylduna mína —
+          þetta er ekki opinber kosningavél eða pólitískt áróðursefni. Stigagjöf í ákvörðunarvélinni
+          endurspeglar mat byggt á opinberum stefnuskrám flokkanna.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <span>Kosningar Akureyri · 16. maí 2026</span>
+        <span class="text-muted">Útbúið til einkanota</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/data.js"></script>
+  <script>
+    const grid = document.getElementById('party-grid');
+    PARTIES.forEach(party => {
+      const card = document.createElement('a');
+      card.className = 'party-card';
+      card.href = party.manifestoUrl;
+      card.style.setProperty('--party-color', party.color);
+      card.innerHTML = `
+        <div class="party-letter">${party.listLetter}</div>
+        <h3>${party.name}</h3>
+        <p>${party.tagline}</p>
+      `;
+      grid.appendChild(card);
+    });
+  </script>
+</body>
+</html>

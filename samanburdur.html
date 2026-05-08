@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samanburður — Kosningar Akureyri 2026</title>
+  <meta name="description" content="Beinn samanburður á stefnumálum flokkanna á Akureyri eftir málefnum.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav">
+      <a href="index.html" class="site-logo">
+        <span class="logo-mark">A</span>
+        Kosningar Akureyri 2026
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Yfirlit</a>
+        <a href="akvardanavel.html">Ákvörðunarvél</a>
+        <a href="samanburdur.html" class="active">Samanburður</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2>Samanburður eftir málefnum</h2>
+        <p class="section-lead">
+          Stigagjöf 1–5 endurspeglar hversu skýrt og afgerandi flokkur fjallar um málefnið í stefnuskrá sinni.
+          Smelltu á málefni til að sjá nákvæmari atriði frá hverjum flokki.
+        </p>
+
+        <div class="comparison-table-wrap" style="margin-bottom: 2.5rem;">
+          <table class="comparison-table">
+            <thead>
+              <tr id="header-row">
+                <th>Málefni</th>
+                <!-- Flokkar koma frá JS -->
+              </tr>
+            </thead>
+            <tbody id="comparison-tbody">
+              <!-- Raðir koma frá JS -->
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Hvað segir hver flokkur?</h2>
+        <p class="section-lead">Smelltu á málefni til að sjá lykilatriði frá hverjum flokki.</p>
+        <div id="topic-sections">
+          <!-- Topic sections koma frá JS -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <span>Kosningar Akureyri · 16. maí 2026</span>
+        <span class="text-muted">Útbúið til einkanota</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/data.js"></script>
+  <script>
+    // Byggja upp dálka í haus
+    const headerRow = document.getElementById('header-row');
+    PARTIES.forEach(party => {
+      const th = document.createElement('th');
+      th.className = 'party-th';
+      th.style.setProperty('--party-color', party.color);
+      th.innerHTML = `<span class="party-th-letter">${party.listLetter}</span>${party.shortName}`;
+      headerRow.appendChild(th);
+    });
+
+    // Byggja upp matrix
+    const tbody = document.getElementById('comparison-tbody');
+    TOPICS.forEach(topic => {
+      const tr = document.createElement('tr');
+      const topicCell = document.createElement('td');
+      topicCell.className = 'topic-cell';
+      topicCell.innerHTML = `${topic.icon} ${topic.name}`;
+      tr.appendChild(topicCell);
+
+      PARTIES.forEach(party => {
+        const td = document.createElement('td');
+        td.className = 'score-cell';
+        const score = party.scores[topic.id] || 0;
+        const filled = '●'.repeat(score);
+        const empty = '○'.repeat(5 - score);
+        td.innerHTML = `<span class="score-pill" style="--party-color: ${party.color}; --party-color-light: ${party.colorLight};">${score}/5</span><br><span style="color: ${party.color}; letter-spacing: 1px; font-size: 0.8rem;">${filled}<span style="color: var(--text-faint);">${empty}</span></span>`;
+        tr.appendChild(td);
+      });
+
+      tbody.appendChild(tr);
+    });
+
+    // Topic detail sections
+    const topicSections = document.getElementById('topic-sections');
+    TOPICS.forEach((topic, idx) => {
+      const section = document.createElement('div');
+      section.className = 'topic-section' + (idx === 0 ? ' open' : '');
+
+      const header = document.createElement('div');
+      header.className = 'topic-section-header';
+      header.innerHTML = `
+        <h3>${topic.icon} ${topic.name}</h3>
+        <span class="chevron">▼</span>
+      `;
+      header.addEventListener('click', () => section.classList.toggle('open'));
+
+      const body = document.createElement('div');
+      body.className = 'topic-section-body';
+
+      let bodyContent = `<p class="text-muted" style="margin-top: 1rem;">${topic.description}</p>`;
+      bodyContent += '<div class="party-points">';
+
+      PARTIES.forEach(party => {
+        const points = party.keyPoints[topic.id] || [];
+        const score = party.scores[topic.id] || 0;
+        bodyContent += `
+          <div class="party-points-card" style="--party-color: ${party.color};">
+            <h4>
+              <span>${party.shortName}</span>
+              <span class="score-pill" style="--party-color: ${party.color}; --party-color-light: ${party.colorLight};">${score}/5</span>
+            </h4>
+            <ul>${points.map(p => `<li>${p}</li>`).join('')}</ul>
+          </div>
+        `;
+      });
+
+      bodyContent += '</div>';
+      body.innerHTML = bodyContent;
+
+      section.appendChild(header);
+      section.appendChild(body);
+      topicSections.appendChild(section);
+    });
+  </script>
+</body>
+</html>

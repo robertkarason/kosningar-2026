@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ákvörðunarvél — Kosningar Akureyri 2026</title>
+  <meta name="description" content="Stilltu sleiðar fyrir hvert málefni og sjáðu hvaða flokkur passar best við þínar áherslur.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav">
+      <a href="index.html" class="site-logo">
+        <span class="logo-mark">A</span>
+        Kosningar Akureyri 2026
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Yfirlit</a>
+        <a href="akvardanavel.html" class="active">Ákvörðunarvél</a>
+        <a href="samanburdur.html">Samanburður</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2>Ákvörðunarvél</h2>
+        <p class="section-lead">
+          Hversu mikilvægt er hvert málefni þér? Hreyfðu sleiðana frá <strong>0 (skiptir engu)</strong>
+          upp í <strong>10 (afar mikilvægt)</strong>. Niðurstöður uppfærast samstundis.
+        </p>
+
+        <div class="matrix-grid">
+          <div class="sliders-panel">
+            <h3>Mínar áherslur</h3>
+            <p class="panel-lead">Hvert málefni fær mikilvægiseinkunn 0–10.</p>
+
+            <div class="preset-buttons">
+              <button class="btn btn-primary" id="preset-neutral">Núllstilla (5/10)</button>
+              <button class="btn" id="preset-zero">Allt á 0</button>
+            </div>
+
+            <div id="sliders">
+              <!-- Sliders koma frá JS -->
+            </div>
+          </div>
+
+          <div class="results-panel">
+            <h3 style="margin-top: 0;">Niðurstöður</h3>
+            <p class="panel-lead">Flokkar raðaðir eftir samræmi við þínar áherslur.</p>
+            <div id="results">
+              <!-- Niðurstöður koma frá JS -->
+            </div>
+            <p class="text-muted" style="font-size: 0.82rem; margin-top: 1rem;">
+              Hlutfall reiknast sem <em>vegin meðaltalseinkunn</em>: hver málaflokkur er gefið
+              vægi (þínar áherslur) margfaldað með stigum flokksins (1–5) og deilt með hámarki.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <span>Kosningar Akureyri · 16. maí 2026</span>
+        <span class="text-muted">Útbúið til einkanota</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/data.js"></script>
+  <script>
+    const slidersContainer = document.getElementById('sliders');
+    const resultsContainer = document.getElementById('results');
+
+    // State
+    let importance = { ...NEUTRAL_PRESET };
+
+    function buildSliders() {
+      slidersContainer.innerHTML = '';
+      TOPICS.forEach(topic => {
+        const row = document.createElement('div');
+        row.className = 'slider-row';
+        row.innerHTML = `
+          <div class="slider-label">
+            <span class="label-text"><span class="label-icon">${topic.icon}</span>${topic.name}</span>
+            <span class="label-value" id="val-${topic.id}">${importance[topic.id]}/10</span>
+          </div>
+          <p class="topic-desc">${topic.description}</p>
+          <input type="range" id="slider-${topic.id}" min="0" max="10" step="1" value="${importance[topic.id]}">
+        `;
+        slidersContainer.appendChild(row);
+
+        const slider = row.querySelector(`#slider-${topic.id}`);
+        const valSpan = row.querySelector(`#val-${topic.id}`);
+        slider.addEventListener('input', (e) => {
+          importance[topic.id] = parseInt(e.target.value, 10);
+          valSpan.textContent = `${importance[topic.id]}/10`;
+          renderResults();
+        });
+      });
+    }
+
+    function renderResults() {
+      const ranked = rankParties(importance);
+      const total = Object.values(importance).reduce((a, b) => a + b, 0);
+
+      if (total === 0) {
+        resultsContainer.innerHTML = `
+          <div class="text-muted" style="padding: 2rem; text-align: center; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md);">
+            Stilltu inn að minnsta kosti eitt málefni á hærra en 0 til að sjá niðurstöður.
+          </div>`;
+        return;
+      }
+
+      resultsContainer.innerHTML = '';
+      ranked.forEach((entry, idx) => {
+        const { party, match } = entry;
+        const card = document.createElement('div');
+        card.className = `match-card rank-${idx + 1}`;
+        card.style.setProperty('--party-color', party.color);
+        card.style.setProperty('--party-color-light', party.colorLight);
+        card.innerHTML = `
+          <div class="match-header">
+            <span class="match-name">
+              <span class="rank-badge">${idx + 1}</span>
+              ${party.name}
+            </span>
+            <span class="match-percent">${match}%</span>
+          </div>
+          <p class="match-tagline">${party.tagline}</p>
+          <div class="match-bar">
+            <div class="match-bar-fill" style="width: ${match}%;"></div>
+          </div>
+          <div class="match-actions">
+            <a href="${party.manifestoUrl}">Stefnuskrá →</a>
+            <span style="color: var(--text-faint);">·</span>
+            <a href="${party.url}" target="_blank" rel="noopener">Uppruni ↗</a>
+          </div>
+        `;
+        resultsContainer.appendChild(card);
+      });
+    }
+
+    function applyPreset(preset) {
+      importance = { ...preset };
+      TOPICS.forEach(topic => {
+        const slider = document.getElementById(`slider-${topic.id}`);
+        const valSpan = document.getElementById(`val-${topic.id}`);
+        slider.value = importance[topic.id];
+        valSpan.textContent = `${importance[topic.id]}/10`;
+      });
+      renderResults();
+    }
+
+    document.getElementById('preset-neutral').addEventListener('click', () => applyPreset(NEUTRAL_PRESET));
+    document.getElementById('preset-zero').addEventListener('click', () => applyPreset(Object.fromEntries(TOPICS.map(t => [t.id, 0]))));
+
+    buildSliders();
+    renderResults();
+  </script>
+</body>
+</html>
