@@ -8,68 +8,155 @@ description:
 tags:
   - "clippings"
 ---
-### 1\. Léttum þér daglega lífið
+# Stefnuskrá fyrir bæjarstjórnarkosningar 2026
 
-Sama í hvaða stöðu og á hvaða æviskeiði þú ert ætlum við okkur að létta þér daglega lífið. Við munum sinna öflugri þjónustu við alla íbúa, því við erum sterkari saman.
+Saman erum við sterkari!
 
-- Setjum þak á kostnað fjölskyldna vegna leikskólagjalda. Innleiðum 100% systkinaafslátt og höfum skráningardaga endurgjaldslausa.
-- Bjóðum upp á sumarfrístund fyrir öll börn frá fyrsta til fjórða bekkjar grunnskólanna, þar sem börnin geta unað sér í umhverfi sem þau þekkja.
-- Tengjum saman síðasta leikskólasumarið við upphaf skólagöngu hjá 6 ára börnum.
-- Minnkum skutlið. Endurhönnum leiðarkerfið og fjölgum ferðum þannig að strætó sé alvöru valkostur í samgöngum.
-- Gerum gjaldtöku bæjarins skýra og fyrirsjáanlega. Hver og einn á að geta nálgast yfirlit yfir öll gjöld sem bærinn innheimtir á einum stað.
-- Hækkum frístundastyrki barna í 75.000 krónur og vinnum með íþróttafélögum við að halda kostnaði við búnað og keppnisferðir niðri.
-- Stóraukum framboð af félagslegu húsnæði og styttum biðlista.
-- Gætum að samkeppnishæfni við höfuðborgarsvæðið í álagningu fasteignagjalda og lækkum fasteignagjöld.
-- Auðveldum rekstur og uppbyggingu á Akureyri með einum tengipunkti sveitarfélagsins við atvinnulífið á Akureyri. Setjum á fót Atvinnulífsstofu sem verður sá tengipunktur og innleiðir aðgerðir atvinnu- og vaxtarstefnunnar.
+---
 
-### 2\. Hlúum að hverju barni
+## Við erum Samfylkingin á Akureyri
 
-Gætum þess að velferð og líðan barna og ungmenna sé ávallt í forgrunni.
+Við viljum efla bæinn okkar með jafnaðarstefnuna að leiðarljósi, þar sem verðmætasköpun og sterk velferð fara saman. Við trúum því að gott samfélag sé samfélag þar sem við tökum ábyrgð hvert á öðru.
 
-Aukum við sérúrræði á borð við Hlíðaskóla, biðlistar eru langir og þörfin er til staðar.
+Samfylkingin á Akureyri hefur einsett sér að létta bæjarbúum daglega lífið og hafa þarfir íbúa ávallt í fyrirrúmi í allri ákvarðanatöku. Við ætlum okkur að stunda öfluga hagsmunagæslu fyrir Akureyrarbæ, íbúa og atvinnulíf á næsta kjörtímabili.
 
-- Aukum sveigjanleika í inntöku barna á leikskóla og í sumarleyfum leikskóla.
-- Hefjum átak í list- og verkgreinakennslu inni í grunnskólum.
-- Stóraukum kennslu í íslensku sem annað mál í grunnskólum.
-- Gerum börnum og ungmennum kleift að stunda myndlistarnám á Akureyri.
-- Hækkum frístundastyrki barna í 75.000 krónur og vinnum með íþróttafélögum við að halda kostnaði við búnað og keppnisferðir niðri.
-- Eflum starf félagsmiðstöðva og hugum sérstaklega á aldursbilinu 16-18 ára; eftir að grunnskóla lýkur og þar til lögaldur næst.
-- Vinnum markvisst að bættum loftgæðum í bænum og tökum afleiðingar svifryksmengunar alvarlega.
-- Húsnæði, húsnæði, húsnæði
+---
 
-### 3\. Húsnæði, húsnæði, húsnæði
+## Léttum þér daglega lífið
 
-Styttum biðlista eftir félagslegu húsnæði og tryggjum að í öllu nýju skipulagi sé gert ráð fyrir 35% óhagnaðardrifinni uppbyggingu. Húsnæðisuppbygging á að eiga sér stað á forsendum bæjarbúa og það er nauðsynlegt að staldra við og hugsa upp á nýtt hvernig lóðum er úthlutað, bæði til einstaklinga og fyrirtækja.
+Sama í hvaða stöðu og á hvaða æviskeiði þú ert ætlum við okkur að létta þér daglega lífið.
 
-- Gerum kröfu um 35% óhagnaðardrifna uppbyggingu í öllu nýju skipulagi íbúðabyggðar.
-- Höldum áfram skynsamlegri þéttingu byggðarinnar í sátt við íbúa samhliða uppbyggingu nýrra hverfa. Eitt útilokar ekki annað.
-- Hefjum vinnu við nýtt aðalskipulag og setjum markið hátt varðandi þróun íbúafjölda og atvinnutækifæra.
-- Gerum Akureyrarvöll að grænni perlu þar sem náttúra, íbúabyggð og fjölbreytt mannlíf fer saman.
+- Setjum þak á hámarkskostnað leikskólagjalda og innleiðum 100% systkinaafslátt  
+- Bjóðum sumarfrístund fyrir börn í 1.–4. bekk  
+- Tengjum saman síðasta leikskólasumarið við upphaf skólagöngu  
+- Endurhönnum leiðakerfi strætó og fjölgum ferðum  
 
-### 4\. Áhyggjulaust og skemmtilegt ævikvöld
+---
 
-Sýnum fólkinu sem byggði þennan bæ þá virðingu sem það verðskuldar. Það á að vera gott að eldast. Tryggjum heldri Akureyringum áhyggjulaust og skemmtilegt ævikvöld.
+## Velferðarmál
 
-- Reisum almennilega félagsaðstöðu fyrir eldra fólk í samstarfi við EBAK.
-- Húsnæðisstefna Akureyrarbæjar á að vera fyrir alla íbúa, allt nýtt skipulag skal taka mið af þörfum eldra fólks.
-- Samþættum þjónustu við eldra fólk og bætum þannig viðmót, öryggi og skilvirkni. Innleiðum verkefnið „Gott að eldast“ á Akureyri og bætum stuðning við heilabilaða og aðstandendur þeirra.
-- Höldum verði lágu og gæðum háum á máltíðum eldri borgara.
-- Rjúfum félagslega einangrun með að nota stafrænar lausnir og í samstarfi við hjálparsamtök þegar það á við.
-- Bjóðum 70 ára og eldri frítt í sund.
-- Bætum aðgengi að perlum bæjarins yfir vetrartímann, s.s. Lystigarðinum. Gætum að því að aðgengi hreyfihamlaðra sé tryggt við alla mannvirkjagerð hjá Akureyrarbæ.
+- Tryggjum velferð barna og ungmenna  
+- Stóraukum framboð félagslegs húsnæðis  
+- Stækkum Skógarlund og finnum nýja staðsetningu fyrir Brekkukot  
+- Bætum ferliþjónustu fatlaðra  
+- Endurbyggjum húsnæði AA-samtakanna  
+- Stöndum vörð um heilbrigðisstofnanir á Akureyri  
 
-### 5\. Akureyri í sókn
+---
 
-Bæjarstjórn Akureyrar þarf að stunda virka hagsmunagæslu fyrir bæinn, íbúa hans og atvinnulíf. Samfylkingin á Akureyri setur hagsmuni bæjarbúa í fyrsta sætið í allri sinni nálgun.
+## Skólarnir okkar
 
-- Mörkum bænum atvinnu- og vaxtarstefnu til framtíðar sem tekur mið af breyttum heimi, tækniþróun og nýsköpun.
-- Stöndum vörð um millilandaflug til Akureyrar, erjumst fyrir áframhaldandi uppbyggingu flugvallarins og höldum áfram að styðja við markaðssetningu flugvallarins til erlendra og innlendra flugfélaga.
-- Auðveldum rekstur og uppbyggingu á Akureyri með einum tengipunkti sveitarfélagsins við atvinnulífið á Akureyri. Setjum á fót Atvinnulífsstofu sem verður sá tengipunktur og innleiðir aðgerðir atvinnu- og vaxtarstefnunnar.
-- Greiðum fyrir fjölbreyttari atvinnutækifærum á svæðinu og aðstöðu til fjarvinnu - fáum fólkið okkar aftur heim eftir að það hefur náð sér í sérhæfingu og reynslu.
-- Hlúum að grunnatvinnugreinum okkar, lækkum fasteignagjöld á atvinnuhúsnæði og berjumst fyrir styttri leiðum til og frá Akureyri.
-- Tryggjum að framlög til menningarmála fylgi verðlagi og hefjumst handa við að móta nýja menningarstefnu. Sú síðasta féll úr gildi árið 2018.
-- Stöndum vörð um Sjúkrahúsið á Akureyri, hjúkrunarheimilin og aðrar mikilvægar heilbrigðisstofnanir á Akureyri.
-- Tryggjum stöðugt framboð atvinnulóða með fullnægjandi innviðum.
-- Eflum Akureyri sem heilsársáfangastað, bætum aðgengi að perlum bæjarins yfir vetrartímann, s.s. Lystigarðinum. Bætum upplifun ferðamanna og fáum þá til að staldra lengur við hjá okkur.
+- Aukum aðgengi að sérfræðingum í skólum  
+- Bætum starfsumhverfi kennara  
+- Fjölgun sérúrræða eins og Hlíðaskóla  
+- Sveigjanlegri leikskóladvöl  
+- Átak í list- og verkgreinum  
+- Styðjum MA, VMA og Háskólann á Akureyri  
 
-[Hér má skoða kosningastefnuna í heild sinni á pdf skjali.](https://samfylkingin.cdn.prismic.io/samfylkingin/aeiiDMBOoF08xNAT_Ma%CC%81lefnaskra%CC%81Akureyri.pdf)
+---
+
+## Öflug hagsmunagæsla — kröftugt atvinnulíf
+
+- Setjum atvinnu- og vaxtarstefnu  
+- Einföldum samskipti við atvinnulíf í gegnum Atvinnulífsstofu  
+- Fjölbreyttari atvinnutækifæri og fjarvinna  
+- Stuðningur við grunnatvinnugreinar  
+- Lækkun fasteignagjalda atvinnuhúsnæðis  
+
+---
+
+## Ábyrg fjármál — fyrir bæjarbúa alla
+
+- Hækkum ekki gjöld umfram verðbólgu  
+- Tryggjum skýra og fyrirsjáanlega gjaldtöku  
+- Möguleiki á lækkun fasteignagjalda í sérstökum tilvikum  
+- Rekstur með ábyrgð og skilvirkni  
+
+---
+
+## Húsnæðis- og skipulagsmál
+
+- 35% óhagnaðardrifin íbúðauppbygging  
+- Þétt og skipulögð byggð með nýjum hverfum  
+- Nýtt aðalskipulag  
+- Þróun Akureyrarvallar  
+- Tryggt framboð atvinnulóða  
+- Lækkun á fastleigu og hjólastæði bætt  
+
+---
+
+## Eldri borgarar
+
+- Bætt félagsaðstaða eldri borgara  
+- Húsnæðisstefna sem tekur mið af þörfum þeirra  
+- Samþætt þjónusta og verkefnið „Gott að eldast“  
+- Lágt verð og góð gæði máltíða  
+- Minnkun félagslegrar einangrunar  
+- Frítt í sund fyrir 70+  
+
+---
+
+## Íþróttir og tómstundir
+
+- Hækkun frístundastyrkja í 75.000 kr.  
+- Stuðningur við íþróttafélög  
+- Efling félagsmiðstöðva (16–18 ára)  
+- Uppbygging íþróttamannvirkja  
+- Lengri opnun sundlaugar  
+- Vetraríþróttamiðstöð Íslands efld  
+- Ný 50m innisundlaug undirbúin  
+
+---
+
+## Menning og listir
+
+- Aðgangur barna að myndlistarnámi  
+- Samkeppnishæf laun listamanna  
+- Viðhald útilistaverka  
+- Ný menningarstefna  
+- Fagráð úthlutar styrkjum  
+- Stækkun Minjasafns Akureyrar  
+
+---
+
+## Umhverfi og náttúra
+
+- Framkvæmd loftslagsstefnu  
+- Vernd náttúrusvæða  
+- Betri loftgæði  
+- Vistvænar samgöngur  
+- Matjurtarækt nær fólki  
+- Hringrásarhagkerfi styrkt  
+
+---
+
+## Málefni innflytjenda
+
+- Jöfn tækifæri til þátttöku  
+- Betri aðgangur að þjónustu  
+- Aukið nám í íslensku sem annað mál  
+- Samfélag þar sem allir upplifa sig velkomna  
+
+---
+
+## Áfangastaðurinn Akureyri
+
+- Styðjum millilandaflug og flugvöll  
+- Endurbætur á miðbæ  
+- Reglur um skammtímaleigu  
+- Eflum ferðamennsku allt árið  
+- Viðburðasjóður fyrir samfélagið  
+
+---
+
+## Stjórnkerfi, stjórnsýsla og gagnsæi
+
+- Endurvekjum viðtalstíma bæjarfulltrúa  
+- Styrkjum málaflokka eins og umhverfi og menningu  
+- Aukin gagna- og upplýsingabirting  
+- Nýtum gervigreind í upplýsingamiðlun  
+- Tryggjum aðgengi fatlaðra  
+- Fylgjum mannréttindastefnu  
+
+---
+``
